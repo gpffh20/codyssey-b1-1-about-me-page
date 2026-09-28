@@ -180,7 +180,6 @@ h3 {
   border-color: var(--color-border);
   background: color-mix(in srgb, var(--color-bg) 88%, transparent);
   box-shadow: 0 8px 30px rgba(23, 32, 29, 0.06);
-  backdrop-filter: blur(14px);
 }
 
 .nav {
