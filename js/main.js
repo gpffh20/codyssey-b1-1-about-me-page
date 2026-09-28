@@ -62,7 +62,11 @@ const setTheme = (theme) => {
 const renderMenu = () => {
   elements.navMenu.classList.toggle('active', state.menuOpen);
   elements.menuToggle.classList.toggle('active', state.menuOpen);
-  elements.body.classList.toggle('menu-open', state.menuOpen);
+  if (state.menuOpen) {
+    elements.body.classList.add('menu-open');
+  } else {
+    elements.body.classList.remove('menu-open');
+  }
   elements.menuToggle.setAttribute('aria-expanded', String(state.menuOpen));
   elements.menuToggle.setAttribute('aria-label', state.menuOpen ? '메뉴 닫기' : '메뉴 열기');
 };

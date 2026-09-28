@@ -88,6 +88,10 @@ curl -I http://localhost:5500/
 
 ![데스크톱 실행 화면](docs/screenshots/01-desktop.png)
 
+![모바일 실행 화면](docs/screenshots/02-mobile.png)
+
+![다크 모드 실행 화면](docs/screenshots/03-dark-mode.png)
+
 ## 배운 점
 
 - Flexbox는 한 방향의 정렬과 네비게이션에, Grid는 행과 열이 함께 변하는 카드 목록에 적합함을 확인했다.
