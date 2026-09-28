@@ -146,13 +146,24 @@ h3 {
 h1 {
   max-width: 18ch;
   margin-bottom: var(--space-3);
-  font-size: clamp(2.6rem, 11vw, 6.4rem);
+  font-size: clamp(2rem, 10vw, 6.4rem);
   letter-spacing: -0.06em;
 }
 
-h1 span,
+.hero-title-name,
 .logo span {
   color: var(--color-accent);
+}
+
+.hero-title-korean,
+.hero-title-identity,
+.hero-title-korean > span,
+.hero-title-identity > span {
+  display: block;
+}
+
+.hero-title-name {
+  white-space: nowrap;
 }
 
 h2 {
@@ -711,6 +722,15 @@ h3 {
   .hero-buttons {
     align-items: center;
     flex-direction: row;
+  }
+
+  .hero-title-korean > span,
+  .hero-title-identity > span {
+    display: inline;
+  }
+
+  .hero-title-korean > span + span::before {
+    content: " ";
   }
 
   .about-layout {
