@@ -162,7 +162,8 @@ h1 {
   display: block;
 }
 
-.hero-title-name {
+.hero-title-korean > span,
+.hero-title-identity > span {
   white-space: nowrap;
 }
 
