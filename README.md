@@ -81,8 +81,8 @@ curl -I http://localhost:5500/
 
 ## 배포
 
-- GitHub 저장소: [https://github.com/gpffh20/b1-1](https://github.com/gpffh20/b1-1)
-- GitHub Pages: [https://gpffh20.github.io/b1-1/](https://gpffh20.github.io/b1-1/)
+- GitHub 저장소: [https://github.com/gpffh20/codyssey-b1-1-about-me-page](https://github.com/gpffh20/codyssey-b1-1-about-me-page)
+- GitHub Pages: [https://gpffh20.github.io/codyssey-b1-1-about-me-page/](https://gpffh20.github.io/codyssey-b1-1-about-me-page/)
 
 ## 실행 결과와 스크린샷
 
