@@ -28,15 +28,13 @@
 ├── css/
 │   └── style.css          # 디자인 토큰, 반응형 레이아웃, 테마와 애니메이션
 ├── docs/
-│   └── screenshots/       # 제출용 데스크톱·모바일·다크 모드 캡처 위치
+│   └── screenshots/       # 실행 화면
 ├── images/
 │   └── profile-illustration.png # 대체 텍스트가 있는 프로필 일러스트
 ├── js/
 │   └── main.js            # 이벤트, 상태, API, 폼 검증과 DOM 렌더링
 ├── .gitignore
-├── .nojekyll
 ├── index.html
-├── RUNBOOK.md             # 개인화·검수·캡처·배포 실행 순서
 └── README.md
 ```
 
@@ -53,16 +51,6 @@ Projects 영역은 GitHub API 호출 전 로딩 상태를 먼저 렌더링한다
 - 헤더 배경 전환: 60px
 - 맨 위로 버튼 표시: 300px
 - `IntersectionObserver` 등장 임계값: 0.2
-
-## 개인 정보 바꾸기
-
-현재 제출자의 실제 정보가 없어 실행 가능한 예시값을 사용했다.
-
-1. `index.html`의 `Codyssey Learner`, 소개 문구, 이메일을 본인 정보로 바꾼다.
-2. `<body data-github-user="octocat">`의 `octocat`을 본인 GitHub 아이디로 바꾼다.
-3. `images/profile-illustration.png`를 본인 이미지로 교체할 경우 파일 경로와 `alt` 설명도 함께 수정한다.
-
-GitHub 아이디는 HTML 한 곳에서만 읽으므로 JavaScript 수정은 필요 없다.
 
 ## 실행 방법
 
@@ -93,29 +81,12 @@ curl -I http://localhost:5500/
 
 ## 배포
 
-GitHub에 `b1-1` 저장소를 만든 뒤 다음과 같이 올린다.
-
-```bash
-git add .
-git commit -m "feat: complete responsive portfolio"
-git remote add origin https://github.com/<YOUR_GITHUB_ID>/b1-1.git
-git push -u origin main
-```
-
-저장소의 **Settings → Pages → Build and deployment**에서 `Deploy from a branch`, `main`, `/(root)`를 선택한다. 배포 주소는 `https://<YOUR_GITHUB_ID>.github.io/b1-1/` 형식이다.
-
-- GitHub 저장소 URL: 배포 계정 확정 후 기입
-- GitHub Pages URL: 배포 계정 확정 후 기입
+- GitHub 저장소: [https://github.com/gpffh20/b1-1](https://github.com/gpffh20/b1-1)
+- GitHub Pages: [https://gpffh20.github.io/b1-1/](https://gpffh20.github.io/b1-1/)
 
 ## 실행 결과와 스크린샷
 
 ![데스크톱 실행 화면](docs/screenshots/01-desktop.png)
-
-제출 전 [RUNBOOK](RUNBOOK.md)에 따라 아래 나머지 파일을 만든다.
-
-- `docs/screenshots/01-desktop.png`
-- `docs/screenshots/02-mobile.png`
-- `docs/screenshots/03-dark-mode.png`
 
 ## 배운 점
 
